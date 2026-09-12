@@ -4,8 +4,8 @@
 **Feature assigned:** Number Guesser
 **Source document:** *The Story of DataMan* — manual transcript
 
-**Your name:**
-**Date:**
+**Your name: Ashley Mitchell**
+**Date:9/8/2026**
 
 ---
 
