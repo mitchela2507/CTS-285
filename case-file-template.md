@@ -29,6 +29,7 @@ Why does this feature exist? What problem does it solve for the user?
 |---|---|---|
 | Sharpen your math skill and keep AntiMath away. |“you'll be sharpening your math skills. AntiMath will keep his distance whenever you play!”| Number Guesser -Story |
 | Teaches number betweenness and number logic | “Number Guesser helps to teach the important basic concept of number betweeness (the unknown secret number is always between the two numbers shown in DataMan's display) and number logic.”|Number Guesser - Parent|
+|Help builds skills in estimation and averaging| “The strategy involved in getting to the answer in the fewest tries will help build skills in estimation and averaging.”|Number Guesser - Parent|
 
 ---
 
