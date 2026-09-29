@@ -28,7 +28,7 @@ Use at least four concise evidence statements. Label the source of each.
 - **E-06 — Source:** M2 Elicitation Simulation — Complication  
   **Evidence:** Students may use DataMan on school Chromebooks, phones, tablets, and home computers. Some practice sessions may also be interrupted before students intentionally sign out.
 
-[Add additional evidence notes if needed.]
+
 
 ## Functional Requirements
 
@@ -58,7 +58,7 @@ Write at least four functional requirements. Each requirement should describe a 
 **Requirement:** The system must allow authorized users to store math problems for a learner to practice later. 
 **Source/Rationale:** The DataMan manual describes the Memory Bank as allowing parents, teachers, or friends to store math problems for a child to practice later.
 
-[Add additional functional requirements if needed.]
+
 
 ## Non-Functional Requirements
 
@@ -80,20 +80,19 @@ Write at least three non-functional requirements. Each requirement should descri
 **Requirement:** The system must support no more than 10 stored math problems at one time insid eof The Memory Bank game.  
 **Source/Rationale:** The DataMan manual specifies that the original Memory Bank can store up to 10 problems.
 
-[Add additional non-functional requirements if needed.]
+
 
 ## Open Questions / Assumptions
 
 Do not turn an unsupported idea into a confirmed requirement. Record unresolved items here until evidence supports a decision.
 
-- **Q-01:** [What still needs to be clarified or confirmed?]
-- **Q-02:** [What still needs to be clarified or confirmed?]
-- **Q-03:**
-- **Q-04:**
-- **Q-05:**
-- **Q-06:**
+- **Q-01:** What specific information should be included in a learner's saved practice state, and how long should it remain available?
+- **Q-02:** What specific information should parents and teachers be able to see about learner activity and progress?
+- **Q-03:** What method should be used to provide parents and teachers with information about learner activity and progress? A detailed reporting dashboard has not been confirmed.
+- **Q-04:** What specific device and access conditions must the modernized system support?
+- **Q-05:** How should the system handle a learner moving between different devices during an unfinished practice session?
+- **Q-06:** Which original DataMan activities must be preserved in the modernized system, and which activities can be changed or removed?
 
-[Add or remove items as appropriate.]
 
 ## Final Quality Check
 
