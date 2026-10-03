@@ -1,14 +1,10 @@
 # DataMan Requirements Register
 
-> Replace all bracketed prompts with your own project evidence and requirements. Delete the prompts before submitting.
-
 ## Project Context
 
 The DataMan modernization project is focused on updating the original DataMan learning experience as a web application while keeping the main purpose of the original system. The primary users are students who practice independently, often with a teacher or parent nearby. The project is intended to give students a simple way to practice math, receive feedback, see their progress, and return to their saved practice without losing their work.
 
 ## Evidence Notes
-
-Use at least four concise evidence statements. Label the source of each.
 
 - **E-01 — Source:** DataMan Manual — Introduction and Story  
   **Evidence:** DataMan was designed as a learning tool for children and students to provide math drill, practice, exploration, and learning games. The manual identifies elementary and middle-school students as the intended users.
@@ -23,7 +19,7 @@ Use at least four concise evidence statements. Label the source of each.
   **Evidence:** Teachers reported that students may pause their practice and return later, so stakeholders want a learner's saved practice state to remain available after leaving and returning to the application.
 
 - **E-05 — Source:** M2 Elicitation Simulation — Stakeholder Elicitation  
-  **Evidence:** Stakeholders identified immediate answer feedback, repeated practice after an incorrect response, and a clear way for learners to see progress as important parts of the original DataMan experience.
+  **Evidence:** Stakeholders identified immediate answer feedback, repeated practice after an incorrect response, and a clear way for learners to see progress as important parts of the original DataMan experience. Parents and teachers also want to understand what the learner practiced and whether progress is occurring.
 
 - **E-06 — Source:** M2 Elicitation Simulation — Complication  
   **Evidence:** Students may use DataMan on school Chromebooks, phones, tablets, and home computers. Some practice sessions may also be interrupted before students intentionally sign out.
@@ -32,84 +28,52 @@ Use at least four concise evidence statements. Label the source of each.
 
 ## Functional Requirements
 
-Write at least four functional requirements. Each requirement should describe a capability or behavior the system must provide.
-
 ### FR-01
 **Requirement:** The system must automatically save a learner's practice state so the learner can return later without losing previous work.  
-**Source/Rationale:** Teachers reported that students may pause practice and return later, and stakeholders want the learner's saved practice state to remain available. The M2 decision also revised this requirement to account for interrupted sessions.
+**Source/Rationale:** E-04 identifies the need for learners to return to their practice later. E-06 explains that sessions may be interrupted before the learner signs out, making it important to preserve the learner's work.
 
 ### FR-02
 **Requirement:** The system must provide immediate feedback indicating whether a learner's answer is correct or incorrect.  
-**Source/Rationale:** The DataMan manual describes the Answer Checker as providing feedback about whether an entered answer is correct. Stakeholders also identified immediate answer feedback as an important part of the original DataMan experience.
+**Source/Rationale:** E-02 describes the Answer Checker's feedback behavior, and E-05 identifies immediate answer feedback as an important part of the original DataMan experience.
 
 ### FR-03
-**Requirement:** The system must allow a learner to continue practicing after an incorrect response.  
-**Source/Rationale:** The DataMan manual shows that learners can make another attempt after an incorrect answer, and stakeholders identified repeated practice after an incorrect response as a central part of the original experience.
+**Requirement:** The system must allow a learner to make another attempt on the same problem after an incorrect response.
+**Source/Rationale:** E-02 states that the learner can make another attempt after an incorrect answer, and E-05 identifies repeated practice after an incorrect response as an important part of the original experience.
 
 ### FR-04
-**Requirement:** The system must provide a way for learners to see their practice progress. 
-**Source/Rationale:** Stakeholders identified a clear way for learners to see progress as an important part of the original DataMan experience. The DataMan manual also describes activities that track and display learner scores.
+**Requirement:** The system must show the learner the number of correct answers and the number of problems attempted during a practice activity. 
+**Source/Rationale:** E-05 identifies seeing progress as an important part of the original DataMan experience, and E-03 states that the Memory Bank tracks the learner's score.
 
 ### FR-05
 **Requirement:** The system must provide information that allows parents or teachers to understand what the learner practiced and whether progress is occurring. 
-**Source/Rationale:** Parents and teachers stated that they want to understand learner activity and progress. The specific method for providing this information has not yet been confirmed.
+**Source/Rationale:** E-05 states that parents and teachers want to understand learner activity and progress. The specific method for providing this information has not yet been confirmed.
 
 ### FR-06
-**Requirement:** The system must allow authorized users to store math problems for a learner to practice later. 
-**Source/Rationale:** The DataMan manual describes the Memory Bank as allowing parents, teachers, or friends to store math problems for a child to practice later.
+**Requirement:** The system must allow parents, teachers, or other users authorized by the project to store math problems for a learner to practice later.
+**Source/Rationale:** E-03 describes the DataMan Memory Bank as allowing parents, teachers, or friends to store math problems for a child to practice later.
 
 
 
 ## Non-Functional Requirements
 
-Write at least three non-functional requirements. Each requirement should describe a measurable quality, constraint, or condition the system must satisfy.
-
 ### NFR-01
-**Requirement:** The system must preserve a learner's saved practice state when the learner leaves the application and returns later.  
-**Source/Rationale:** Teachers reported that students may pause practice and return later, and the M2 decision record identifies reliable preservation of saved practice state as a quality constraint.
+**Requirement:** The system must support access through a web browser on the device types confirmed for project support.
+**Source/Rationale:** E-06 identifies school Chromebooks, phones, tablets, and home computers as devices students may use to access DataMan. The exact device and access requirements still need to be confirmed.
 
 ### NFR-02
-**Requirement:** The system must preserve a learner's practice state when a practice session is interrupted before the learner intentionally signs out. 
-**Source/Rationale:** The M2 simulation revealed that some sessions may be interrupted before students intentionally sign out. The decision record revised the saved-practice requirement to account for interrupted sessions.
+**Requirement:** The system must provide the same core practice features on each device type selected for project support.
+**Source/Rationale:** E-06 identifies several devices that students may use. Providing the same core practice features across the devices selected for support would help maintain a consistent experience. The required devices have not yet been confirmed.
 
 ### NFR-03
-**Requirement:** The system must provide a simple user experience that allows learners to practice without unnecessary navigation. 
-**Source/Rationale:** Stakeholders stated that the modernized experience should be understandable without a printed manual and should avoid making the learner navigate unnecessary screens.
-
-### NFR-04
-**Requirement:** The system must support no more than 10 stored math problems at one time insid eof The Memory Bank game.  
-**Source/Rationale:** The DataMan manual specifies that the original Memory Bank can store up to 10 problems.
-
+**Requirement:** The system must be usable by learners without requiring a printed manual to complete their practice activities.
+**Source/Rationale:** E-05 identifies a clear and understandable learner experience as an important part of the DataMan experience.
 
 
 ## Open Questions / Assumptions
-
-Do not turn an unsupported idea into a confirmed requirement. Record unresolved items here until evidence supports a decision.
 
 - **Q-01:** What specific information should be included in a learner's saved practice state, and how long should it remain available?
 - **Q-02:** What specific information should parents and teachers be able to see about learner activity and progress?
 - **Q-03:** What method should be used to provide parents and teachers with information about learner activity and progress? A detailed reporting dashboard has not been confirmed.
 - **Q-04:** What specific device and access conditions must the modernized system support?
 - **Q-05:** How should the system handle a learner moving between different devices during an unfinished practice session?
-- **Q-06:** Which original DataMan activities must be preserved in the modernized system, and which activities can be changed or removed?
-
-
-## Final Quality Check
-
-Before submitting, confirm that each requirement is:
-
-- [ ] Clear enough for another team member to interpret consistently.
-- [ ] Supported by evidence, a stakeholder need, or a confirmed project constraint.
-- [ ] Testable or verifiable later.
-- [ ] Solution-neutral enough for this stage of the project.
-- [ ] Focused on one main capability or quality.
-- [ ] Classified correctly as functional or non-functional.
-
-Also confirm:
-
-- [ ] At least four functional requirements are included.
-- [ ] At least three non-functional requirements are included.
-- [ ] Every confirmed requirement has a source/rationale.
-- [ ] Open questions and assumptions are separated from confirmed requirements.
-- [ ] The simulation decision record is saved at `docs/decisions/m2-elicitation-decision-record.md`.
-- [ ] This file is saved as `docs/requirements.md`, committed, and synced to GitHub.
+- **Q-06:** Which original DataMan activities and limits, such as the Memory Bank's 10-problem limit, must be preserved in the modernized system, and which activities can be changed or removed?
