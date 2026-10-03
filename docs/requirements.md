@@ -38,6 +38,7 @@ The DataMan modernization project is focused on updating the original DataMan le
 
 ### FR-03
 **Requirement:** The system must allow a learner to make another attempt on the same problem after an incorrect response.
+
 **Source/Rationale:** E-02 states that the learner can make another attempt after an incorrect answer, and E-05 identifies repeated practice after an incorrect response as an important part of the original experience.
 
 ### FR-04
