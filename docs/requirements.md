@@ -41,11 +41,11 @@ The DataMan modernization project is focused on updating the original DataMan le
 **Source/Rationale:** E-02 states that the learner can make another attempt after an incorrect answer, and E-05 identifies repeated practice after an incorrect response as an important part of the original experience.
 
 ### FR-04
-**Requirement:** The system must show the learner the number of correct answers and the number of problems attempted during a practice activity. 
+**Requirement:** The system must show the learner the number of correct answers and the number of problems attempted during a practice activity.
 **Source/Rationale:** E-05 identifies seeing progress as an important part of the original DataMan experience, and E-03 states that the Memory Bank tracks the learner's score.
 
 ### FR-05
-**Requirement:** The system must provide information that allows parents or teachers to understand what the learner practiced and whether progress is occurring. 
+**Requirement:** The system must provide information that allows parents or teachers to understand what the learner practiced and whether progress is occurring.
 **Source/Rationale:** E-05 states that parents and teachers want to understand learner activity and progress. The specific method for providing this information has not yet been confirmed.
 
 ### FR-06
