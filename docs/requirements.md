@@ -9,7 +9,7 @@ The DataMan modernization project is focused on updating the original DataMan le
 - **E-01 — Source:** DataMan Manual — Introduction and Story  
   **Evidence:** DataMan was designed as a learning tool for children and students to provide math drill, practice, exploration, and learning games. The manual identifies elementary and middle-school students as the intended users.
 
-- **E-02 — Source:** DataMan Manual — Answer Checker  
+- **E-02 — Source:** DataMan Manual — Answer Checker
   **Evidence:** The Answer Checker allows a learner to enter a math problem and answer and then provides feedback about whether the answer is correct. The learner can make another attempt if the first answer is incorrect.
 
 - **E-03 — Source:** DataMan Manual — Memory Bank 
