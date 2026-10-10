@@ -1,8 +1,5 @@
 # DataMan Product Backlog
 
-> Replace every bracketed prompt with your own work. Delete the prompts, this note, and any unused story blocks before you submit.
-> Save this file as `docs/product-backlog.md`. Use that exact folder, file name, and lowercase spelling.
-
 ## Sources
 
 This backlog uses these files from my repository:
@@ -11,11 +8,9 @@ This backlog uses these files from my repository:
 - `docs/decisions/m3-backlog-triage-record.md`
 - `docs/decisions/m3-product-owner-decision-record.md`
 
-[If you revised `docs/requirements.md` after Module 2, state that here in one sentence.]
+I did not revise docs/requirements.md after Module 2.
 
 ## Priority Order
-
-List every story ID from highest priority to lowest. The story blocks below must appear in this same order.
 
 1. US-01 — Immediate answer feedback
 2. US-02 — Retry after an incorrect answer
@@ -79,12 +74,13 @@ List every story ID from highest priority to lowest. The story blocks below must
 ### US-03 — See correct and attempted counts
  
 **Requirement ID:** FR-04
+
 **User Story:** As a student, I want to see how many answers I got right and how many problems I have tried so that I can tell how my practice is going.
  
 **Acceptance Criteria:**
  
 - Given a learner starts a practice activity, when no problems have been answered, then the learner sees zero correct and zero attempted.
-- Given a learner submits a first answer to a new problem, when the answer is checked, then the attempted count goes up by one.
+- Given a learner submits an answer to a problem for the first time during a practice activity, when the answer is checked, then the attempted count increases by one.
 - Given a learner submits a correct answer, when the answer is checked, then the correct count goes up by one.
 - Given a learner submits an incorrect answer, when the answer is checked, then the correct count does not change.
   
@@ -152,6 +148,7 @@ These criteria cannot be finalized until Q-04 confirms the support list.
 ### US-06 — Store problems for a learner
  
 **Requirement ID:** FR-06
+
 **User Story:** As a parent or teacher, I want to store math problems for a learner so that the learner can practice them later.
  
 **Acceptance Criteria:**
@@ -175,6 +172,7 @@ These criteria cannot be finalized until Q-04 confirms the support list.
 ### US-07 — Practice without a printed manual
  
 **Requirement ID:** NFR-03
+
 **User Story:** As a student, I want to complete practice without needing a printed manual so that I can start on my own.
  
 **Acceptance Criteria:**
@@ -197,6 +195,7 @@ These criteria cannot be finalized until Q-04 confirms the support list.
 ### US-08 — Keep work when a session is interrupted
  
 **Requirement ID:** FR-01
+
 **User Story:** As a student whose practice gets interrupted, I want my work kept even if I never signed out so that a lost connection or closed window does not erase it.
  
 **Acceptance Criteria:**
@@ -220,6 +219,7 @@ These criteria are provisional until Q-01 and Q-05 are answered.
 ### US-09 — Parent and teacher visibility into practice
  
 **Requirement ID:** FR-05
+
 **User Story:** As a parent or teacher, I want to understand what a learner practiced and whether progress is happening so that I can support the learner.
  
 **Acceptance Criteria:**
@@ -243,6 +243,7 @@ These criteria are provisional until Q-02 and Q-03 confirm what information is n
 ### US-10 — Same core features on every supported device
  
 **Requirement ID:** NFR-02
+
 **User Story:** As a student who uses more than one device, I want the same core practice features on each one so that practice feels the same everywhere.
  
 **Acceptance Criteria:**
@@ -263,8 +264,6 @@ These criteria cannot be finalized until Q-04 confirms the support list.
 
 ## Open Questions Carried Forward
 
-List each open question or assumption from `docs/requirements.md` that affects this backlog. Do not turn an unresolved question into a confirmed story.
-
 - **Q-01:** US-04 and US-08 wait on this. Their criteria are provisional until we know what the saved practice state includes and how long it stays available.
 - **Q-02:** US-09 waits on this. No story describes specific information for parents or teachers yet.
 - **Q-03:** US-09 waits on this. A reporting dashboard is not confirmed, so no dashboard story exists.
@@ -274,8 +273,6 @@ List each open question or assumption from `docs/requirements.md` that affects t
 
 ## Revisions After Triage and Release Planning
 
-State what changed in this backlog because of your triage record and your Product Owner decision record.
-
 - **US-01, US-02 — kept at ranks 1 and 2, marked Move Forward** — The triage record moved forward the high-value, ready, low-risk items (immediate feedback and retry), and the Product Owner record built its release around ready, high-value work. Both still trace to FR-02 and FR-03 and were left unchanged because they already passed the six lenses.
 - **US-04, US-08 — FR-01 split into two stories** — The triage record deferred the large persistence item because its identity dependency was unresolved. Splitting the single large saving story into return-to-saved-practice (Refine) and interrupted-session (Defer) keeps the value visible while exposing what is blocked. Both keep FR-01 as the Requirement ID.
 - **US-09 — marked Defer, with no dashboard story** — The triage record deferred the parent and teacher summary and the analytics dashboard because scope and reporting needs were unclear. Q-02 and Q-03 are still open here, so I did not turn them into a confirmed story.
@@ -283,15 +280,3 @@ State what changed in this backlog because of your triage record and your Produc
 - **US-04 through US-10 — Readiness labels added** — Both records showed that high value is not the same as ready. Items with unresolved questions or dependencies are marked Refine or Defer.
 - **Keyboard accessibility — no story added** — The Product Owner record showed a keyboard accessibility issue becoming release-critical. `docs/requirements.md` has no validated accessibility requirement, so I did not create an unsupported story. This needs stakeholder confirmation and a new requirement before it can be backlogged.
 
-## Before You Submit
-
-- [ ] The file path is exactly `docs/product-backlog.md`.
-- [ ] All bracketed prompts and unused story blocks are deleted.
-- [ ] Every story has all eight required fields: Story ID, Requirement ID, User Story, Acceptance Criteria, Relative Effort, Dependency / Constraint, Priority, Priority Rationale.
-- [ ] Every Requirement ID exists in `docs/requirements.md`.
-- [ ] Each acceptance criterion states a result another person can observe and check.
-- [ ] The story blocks follow the Priority Order list.
-- [ ] Large or uncertain stories are marked Refine or Defer, not hidden as Move Forward.
-- [ ] No story or criterion names a framework, database, or screen layout, unless a requirement makes it a constraint.
-- [ ] The file renders correctly on GitHub.
-- [ ] The change is committed with a message that describes it.
