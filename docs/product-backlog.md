@@ -17,49 +17,55 @@ This backlog uses these files from my repository:
 
 List every story ID from highest priority to lowest. The story blocks below must appear in this same order.
 
-1. [US-__]
-2. [US-__]
-3. [US-__]
-4. [US-__]
+1. US-01 — Immediate answer feedback
+2. US-02 — Retry after an incorrect answer
+3. US-03 — See correct and attempted counts
+4. US-04 — Return to saved practice
+5. US-05 — Reach DataMan through a web browser
+6. US-06 — Store problems for a learner
+7. US-07 — Practice without a printed manual
+8. US-08 — Keep work when a session is interrupted
+9. US-09 — Parent and teacher visibility into practice
+10. US-10 — Same core features on every supported device
 
 ## Stories
 
-<!-- Copy one story block for each story. Do not change the field labels. -->
+### US-01 — Immediate answer feedback
 
-### US-01 — [Short title]
+**Requirement ID:** FR-02
 
-**Requirement ID:** [FR-__ or NFR-__ from `docs/requirements.md`. If the story traces to more than one requirement, list each ID.]
-
-**User Story:** As a [user or role], I want [capability or outcome] so that [value or reason].
+**User Story:** As a student practicing math, I want to be told right away whether my answer is correct so that I know how I am doing while the problem is still fresh.
 
 **Acceptance Criteria:**
 
-- Given [starting condition], when [action or event], then [observable result].
-- [Write one line for each condition. Each line must state a result that another person can see and check.]
+- Given a math problem is shown to a learner, when the learner submits a correct answer, then the learner is told the answer is correct before the next problem is shown.
+- Given a math problem is shown to a learner, when the learner submits an incorrect answer, then the learner is told the answer is incorrect before the next problem is shown.
+- Given a learner has submitted an answer, when the feedback appears, then no further action from the learner is needed to see it.
 
-**Relative Effort:** [S / M / L] — [One sentence. Compare this story to the other stories in this backlog, not to hours or days.]
+**Relative Effort:** S — It is one clear check-and-respond behavior, smaller than the saving, storing, and reporting stories in this backlog.
+**Dependency / Constraint:** None
 
-**Dependency / Constraint:** [The story, decision, or constraint that must exist first. Write "None" if there is none.]
+**Priority:** 1
 
-**Priority:** [Rank number from the Priority Order list.]
+**Readiness:** Move Forward
 
-**Readiness:** [Move Forward / Refine / Defer]
-
-**Priority Rationale:** [Why this rank is defensible. Name the factors you used: value, effort, dependency, risk, uncertainty, or stakeholder need.]
+**Priority Rationale:** High value, small effort, no dependency, and low uncertainty. It is the core of the original Answer Checker (E-02) and stakeholders named it as important (E-05). Other stories (US-02, US-03, US-07) build on it, so it also unlocks work. This matches the triage lesson that high-value, unblocked, ready work goes first.
 
 ---
 
-### US-02 — [Short title]
+### US-02 — Retry after an incorrect answer
 
-**Requirement ID:** [FR-__ / NFR-__]
+**Requirement ID:** FR-03
 
-**User Story:** As a [user or role], I want [capability or outcome] so that [value or reason].
+**User Story:** As a student who got a problem wrong, I want to try the same problem again so that I can learn from my mistake instead of moving on without understanding it.
 
 **Acceptance Criteria:**
 
-- Given [starting condition], when [action or event], then [observable result].
+- Given a learner has been told an answer is incorrect, when the learner wants to try again, then the same problem is still available to answer.
+- Given a learner is retrying a problem, when the learner submits a new answer, then the learner receives correct or incorrect feedback for that new answer.
+- Given a learner answers the retry correctly, when the feedback appears, then the learner is told the answer is correct.
 
-**Relative Effort:** [S / M / L] — [comparison]
+**Relative Effort:** S — It reuses the feedback behavior from US-01 and adds only the ability to answer the same problem again.
 
 **Dependency / Constraint:** [dependency, constraint, or None]
 
