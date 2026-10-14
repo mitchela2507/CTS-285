@@ -23,6 +23,8 @@ I did not revise docs/requirements.md after Module 2.
 9. US-09 — Parent and teacher visibility into practice
 10. US-10 — Same core features on every supported device
 
+---
+
 ## Stories
 
 ### US-01 — Immediate answer feedback
