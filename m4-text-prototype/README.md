@@ -50,6 +50,6 @@ To start over, delete `dataman_store.json`.
 - Whether a non-number should ever count as a try (this prototype says no).
 
 ## What running the program changed
-- I ran it, missed P1 once, and quit. When I started it again it asked "P1 try 2 of 2", so it remembered the first miss from `dataman_store.json`. That confirmed the try number can come from stored attempts, not from the screen.
-- Before that run, the template guessed the ending (first-try success, second-try success, two misses) from the attempt count. I changed it so the logic stores the ending when a problem finishes, and the curator report reads the stored ending.
-- When I typed `abc`, the program showed "Enter a whole number" and the try number stayed the same. I decided a non-number is not an attempt, and moved that check into the logic layer so a test can prove it.
+- I ran it, typed `abc`, and it said "Enter a whole number" and stayed on try 1, so a non-number is not an attempt. I decided to keep that rule and moved the check into the logic layer so a test can prove it.
+- I missed P1 once, pressed Ctrl+C, and ran the program again. It asked "P1 try 2 of 2", so it remembered the first miss from `dataman_store.json`. That confirmed the try number can come from stored attempts instead of the screen.
+- After I got P1 right on the second try, the curator report showed "second-try success" with both attempts, even after I restarted the program again. The template had guessed this ending from the attempt count, so I changed it to store the ending when a problem finishes.
