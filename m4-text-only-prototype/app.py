@@ -12,6 +12,7 @@ from dataman.store import JsonFileStore, MemoryStore
 SESSION = "maya-1"
 
 
+
 def practice(store):
     todo = logic.unfinished(store, SESSION)
     if not todo:
