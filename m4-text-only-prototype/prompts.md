@@ -1,6 +1,6 @@
 # Prompts: M4 Text-Only Prototype
 
-**Tool:** Claude (Anthropic), used in chat.
+**Tool:** Claude
 
 ## How I used it
 - **Design Studio / investigation:** I used Claude to help me understand the screenshots from each Studio round and answer questions about what I was seeing. It helped me with some of the wording, but I made the final choices based on my own investigation and what I observed in the tool.
